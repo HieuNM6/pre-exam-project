@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if logged_in? %>
+  Logged as <%= current_user.name %>
+<% end %>
 <% flash.each do |message_type, message| %>
   <%= message_type %> | <%= message %>
 <% end %>
