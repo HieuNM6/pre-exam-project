@@ -1,0 +1,9 @@
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-22 18:09:54 +0700
+Processing by WellcomeController#index as HTML
+  Rendered wellcome/index.html.erb within layouts/application (1.4ms)
