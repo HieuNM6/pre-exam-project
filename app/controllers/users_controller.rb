@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
+      log_in @user
 			flash[:success] = "Wellcome to the sharing stories app!"
 			redirect_to @user
 		else

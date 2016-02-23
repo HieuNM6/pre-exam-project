@@ -8,8 +8,11 @@
 </head>
 <body>
 <% if logged_in? %>
-  Logged as <%= current_user.name %>
+  Logged as <%= current_user.name %> | <%= link_to "Logout", logout_path %>
+<% else %>
+  <%= link_to "Signup", signup_path %> | <%= link_to "Login", login_path %>
 <% end %>
+ | <%= link_to "Home", root_path %>
 <% flash.each do |message_type, message| %>
   <%= message_type %> | <%= message %>
 <% end %>
