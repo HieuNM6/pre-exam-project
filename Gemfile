@@ -28,6 +28,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use to create sample data
 gem 'faker'
 
+# Use to convert markdown text to html
+gem 'redcarpet'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
