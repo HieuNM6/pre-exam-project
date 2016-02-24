@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -30,6 +31,9 @@ gem 'faker'
 
 # Use to convert markdown text to html
 gem 'redcarpet'
+
+# Install Bootstrap 
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
