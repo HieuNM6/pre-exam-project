@@ -1,1 +1,9 @@
-<h1>Hello World!</h1>
+<% @posts.each do |post| %>
+  <li>
+    <%= link_to post.title, post %>
+        <% if current_user == post_owner(post) %>
+      <%= link_to "Delete", post, method: :delete, data: {
+                                                  confirm: "Are you sure?"} %>
+    	<% end %>
+  </li>
+<% end %>

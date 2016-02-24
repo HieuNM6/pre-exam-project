@@ -1,0 +1,16 @@
+<% if @post.errors.any? %>
+You have <%= pluralize(@post.errors.count, "error") %>:
+<ul>
+	<% @post.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	<% end %>
+</ul>
+<% end %>
+<%= form_for(@post) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body, "Content" %> 
+  <%= f.text_area :body, placeholder: "Compose new micropost..." %>
+  <%= f.submit "Post" %>
+<% end %>
