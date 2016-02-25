@@ -1,11 +1,10 @@
 # Pre-work - * Share Story App *
 
-
-**Share Story App** is a Ruby on Rails user shared content  application.
+**Share Story App** is a Ruby on Rails user shared content application.
 
 Submitted by: **HieuNM6**
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 URL: **https://limitless-castle-10666.herokuapp.com/**
 
@@ -13,36 +12,50 @@ URL: **https://limitless-castle-10666.herokuapp.com/**
 
 The following **required** functionality is complete:
 
-* [ ] User can create a new story post, formatted using the Markdown language.
-* [ ] User can edit an existing story post.
-* [ ] There is one page content stories board.
-* [ ] User can delete stories if they post that, with an alert that asks the user to confirm.
-* [ ] User see a search form on the Posts page.
-* [ ] User can submit a search term to find all posts bywith titles containing the search term.
+* [x] User can create a new story post, formatted using the Markdown language.
+* [x] User can edit an existing story post.
+* [x] There is one page content stories board.
+* [x] There is one post that introduces the App Creator with name, picture.
+* [x] User can delete stories if they post that, with an alert that asks the user to confirm.
+* [x] User see a search form on the Posts page.
+* [x] User can submit a search term to find all posts bywith titles containing the search term.
 
 The following **optional** features are implemented:
-* [ ] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
+* [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
 * [ ] User can see how many views a post has.
 * [ ] User can comment on their post or or the user post.
 * [ ] User can add "tags" to a post, and filter posts by tag.
 
 The following **additional** features are implemented:
 
-- [ ] User can sign up.
-- [ ] User can login , session only destroy when user logout.
-- [ ] Using Gravatar for user avatar.
-- [ ] User have id = 1 will have aditional menu to manage user and have permission to detele post and comment of other user.
+- [x] Search form in navbar and can be search when in everywhere in app.
+- [x] User can sign up.
+- [x] User can login , session only destroy when user logout.
+- [x] Using Gravatar for user avatar.
+- [x] User have id = 1 will have aditional menu to manage user and have permission to detele post and comment of other user.
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories (I using silent cast instead of licecap because linux not have that):
 
-> `![Video Walkthrough](walkthrough.gif)`
-
-![Video Walkthrough](/path/to/your/gif/file)
+- Post and edit
+> `![Video Walkthrough1](PostAndEdit.gif)`
+![Video Walkthrough1](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/PostAndEdit.gif)
+- View as not logged user and  register error messages
+> `![Video Walkthrough2](view.as.not.logged.risger.error.message.gif)`
+![Video Walkthrough2](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/view.as.not.logged.risger.error.message.gif)
+- Successful register and search test 
+> `![Video Walkthrough3](register.successful.and.search.test.gif)`
+![Video Walkthrough3](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/register.successful.and.search.test.gif)
+- Show post of user
+> `![Video Walkthrough4](ShowPostofUser.gif)`
+![Video Walkthrough4](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/ShowPostofUser.gif)
+- Show post of other user
+> `![Video Walkthrough5](ShowPostofOtherUser.gif)`
+![Video Walkthrough5](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/ShowPostofOtherUser.gif)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Because I have implemented user system into a project, make it more complicated. Therefore, I can't implement comment or tag into that at before the deadline so I kept it.
 
 ## License
 
