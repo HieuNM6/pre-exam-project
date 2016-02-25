@@ -4,6 +4,9 @@
 		<h1>Post Board</h1>
 	</div>
 </div>
+<% if !@posts.any? %>
+    <center><h1> <strong>Not found</strong> </h1></center>
+<% end %>
 <% @posts.each do |post| %>
   <div class="list-group">
     <%= link_to post, class: "list-group-item list-group-item-info" do %> 
@@ -22,7 +25,9 @@
     <div class="text-right"> 
     <%= link_to "Delete", post, method: :delete, data: {
                                               confirm: "Are you sure?"}, class: "btn btn-danger btn-ls " %>
+    <%= link_to "Edit", edit_post_path(post), class: "btn btn-warning btn-ls" %>
     </div> 
+
     <% end %>  
   </div>
 

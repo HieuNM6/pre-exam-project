@@ -11,3 +11,10 @@
 
 <hr>
 <%= markdown(@post.body) %>
+<% if current_user == post_owner(@post) %>
+	<div class="text-right"> 
+		<%= link_to "Delete", @post, method: :delete, data: {
+		                                          confirm: "Are you sure?"}, class: "btn btn-danger btn-lg " %>
+		<%= link_to "Edit", edit_post_path(@post), class: "btn btn-warning btn-lg" %>
+	</div> 
+<% end %> 

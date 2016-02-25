@@ -4,4 +4,8 @@ class Post < ActiveRecord::Base
   validates :user_id, presence: true
   validates :body, presence: true, length: { minimum: 6}
   validates :title, presence: true, length: { minimum: 6, maximum: 255}
+
+  def self.search(query)
+  	where("title like ?", "%#{query}%")
+  end
 end

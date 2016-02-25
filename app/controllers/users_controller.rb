@@ -3,16 +3,18 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
 
   def index
+    search
     @users = User.all
   end
 
   def show
     @user = User.find(params[:id])
+    search
     @posts = Post.where("user_id=?", @user.id)
-
   end
 
   def new
+    search
 		@user = User.new
   end
 
@@ -28,6 +30,7 @@ class UsersController < ApplicationController
 	end
 
   def edit
+    search
     @user = User.find(params[:id])
   end
 
