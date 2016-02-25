@@ -8,19 +8,13 @@
 </head>
 <body>
 
-<% if logged_in? %>
-  Logged as <%= current_user.name %> | <%= link_to "Logout", logout_path %> |
-  <%= link_to "Edit profile", edit_user_path(current_user) %> |
-  <%= link_to "Show all users", users_path %>
-<% else %>
-  <%= link_to "Signup", signup_path %> | <%= link_to "Login", login_path %>
-<% end %>
- | <%= link_to "Home", root_path %>
-
 <% flash.each do |message_type, message| %>
   <%= message_type %> | <%= message %>
 <% end %>
+<%= render "layouts/navbar" %>
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>

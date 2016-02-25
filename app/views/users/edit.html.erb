@@ -1,5 +1,6 @@
-<h1>Update your profile</h1>
-
+<div class="jumbotron">
+  <center><h1>Update your profile</h1></center>
+</div>
 <% if @user.errors.any? %>
 You have <%= pluralize(@user.errors.count, "error") %>:
 <ul>
@@ -9,24 +10,41 @@ You have <%= pluralize(@user.errors.count, "error") %>:
 </ul>
 <% end %>
 
-<%= form_for(@user) do |f| %>
+<%= form_for @user, :html => {:class => "form-horizontal center"} do |f| %>
+    <div class="form-group">
+      <%= f.label :name , "Your name:", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.text_field :name , class: "form-control" %>
+      </div>
+    </div>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+    <div class="form-group">
+      <%= f.label :email, "Email:", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.email_field :email, class: "form-control" %>
+      </div>
+    </div>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+    <div class="form-group">
+      <%= f.label :password , "Password:", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.password_field :password , class: "form-control" %>
+      </div>
+    </div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.label :password_confirmation, "Confirmation" %>
-  <%= f.password_field :password_confirmation %>
-
-  <%= f.submit "Save changes" %>
+    <div class="form-group">
+      <%= f.label :password_confirmation , "Confirm:", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.password_field :password_confirmation , class: "form-control" %>
+      </div>
+    </div>   
+    <p>
+      <div class="text-center">
+        <%= gravatar_for @user %>
+        <a href="http://gravatar.com/emails" target=_blank>Change your avatar</a>
+      </div>
+    </p>     
+    <div class="text-center">
+      <%= f.submit "Update your account", class: "btn btn-primary btn-lg " %>
+    </div>  
 <% end %>
-
-<div class="gravatar_edit">
-  <%= gravatar_for @user %>
-  <a href="http://gravatar.com/emails" target=_blank>change</a>
-</div>

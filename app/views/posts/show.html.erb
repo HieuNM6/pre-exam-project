@@ -1,2 +1,13 @@
-<%= @post.title %>
+
+<div class="jumbotron">
+	<div class="text-center">
+		<h1><%= @post.title.humanize %></h1>
+	</div>
+</div>
+<hr>
+
+<!-- Date/Time -->
+<p><span class="glyphicon glyphicon-time"></span> Posted on <%= @post.created_at %></p>
+
+<hr>
 <%= markdown(@post.body) %>
