@@ -37,20 +37,15 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories (I using silent cast instead of licecap because linux not have that):
 
-- Post and edit
-> `![Video Walkthrough1](PostAndEdit.gif)`
+- Post and edit:
 ![Video Walkthrough1](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/PostAndEdit.gif)
-- View as not logged user and  register error messages
-> `![Video Walkthrough2](view.as.not.logged.risger.error.message.gif)`
+- View as not logged user and  register error messages:
 ![Video Walkthrough2](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/view.as.not.logged.risger.error.message.gif)
-- Successful register and search test 
-> `![Video Walkthrough3](register.successful.and.search.test.gif)`
+- Successful register and search test: 
 ![Video Walkthrough3](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/register.successful.and.search.test.gif)
-- Show post of user
-> `![Video Walkthrough4](ShowPostofUser.gif)`
+- Show post of user:
 ![Video Walkthrough4](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/ShowPostofUser.gif)
-- Show post of other user
-> `![Video Walkthrough5](ShowPostofOtherUser.gif)`
+- Show post of other user:
 ![Video Walkthrough5](https://raw.githubusercontent.com/HieuNM6/pre-exam-project/master/ShowPostofOtherUser.gif)
 
 ## Notes
