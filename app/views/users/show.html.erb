@@ -13,7 +13,7 @@
         <h3 class="list-group-item-heading"><%= post.title.humanize %></h3>
         <% if current_user == post_owner(post) %>
         <p class="list-group-item-text">
-        <%= "You posted at #{post.created_at}" %>
+        <%= "You posted at #{post.created_at}, #{pluralize(post.views, 'view')}" %>
         </p>                                                 
     	 <% else %>
         <p class="list-group-item-text">

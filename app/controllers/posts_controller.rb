@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.post.build(post_params)
+    @post.views = 0
     if @post.save
       flash[:success] = "Posting successful"
       redirect_to current_user
@@ -37,6 +38,9 @@ class PostsController < ApplicationController
   def show
     search
     @post = Post.find(params[:id])
+    @post.views = @post.views + 1
+    @post.save
+
   end
 
   def new 

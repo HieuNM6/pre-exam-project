@@ -7,7 +7,7 @@
 <hr>
 
 <!-- Date/Time -->
-<p><span class="glyphicon glyphicon-time"></span> Posted on <%= @post.created_at %></p>
+<p><span class="glyphicon glyphicon-time"></span> Posted on <%= @post.created_at %>, <%= pluralize(@post.views, 'view') %></p>
 
 <hr>
 <%= markdown(@post.body) %>
