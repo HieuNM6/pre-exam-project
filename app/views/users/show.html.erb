@@ -17,7 +17,7 @@
         </p>                                                 
     	 <% else %>
         <p class="list-group-item-text">
-        <%= "#{post_owner(post).name.humanize} posted at #{post.created_at}" %>
+        <%= "#{post_owner(post).name.humanize} posted at #{post.created_at}, #{pluralize(post.views, 'view')}" %>
         </p>
       <% end %>    
     <% end %>
