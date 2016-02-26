@@ -33,6 +33,7 @@ The following **additional** features are implemented:
 - [x] User can login , session only destroy when user logout.
 - [x] Using Gravatar for user avatar.
 - [x] User have id = 1 will have aditional menu to manage user and have permission to detele post and comment of other user.
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories (I using silent cast instead of licecap because linux not have that):
@@ -50,7 +51,7 @@ Here's a walkthrough of implemented user stories (I using silent cast instead of
 
 ## Notes
 
-Because I have implemented user system into a project, make it more complicated. Therefore, I can't implement comment or tag into that at before the deadline so I kept it.
+Because I have implemented user system into a project, make it more complicated. Therefore, I can't implement comment or tag into that at before the deadline so I skip it in first review.  (I will implement that in Saturday (post-views, comments, tag))
 
 ## License
 
