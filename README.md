@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 * [ ] User can add "tags" to a post, and filter posts by tag.
 
 The following **additional** features are implemented:
-
+- [x] App running in mobile device with well layout.
 - [x] Search form in navbar and can be search when in everywhere in app.
 - [x] User can sign up.
 - [x] User can login , session only destroy when user logout.
