@@ -22,7 +22,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
-* [ ] User can see how many views a post has.
+* [x] User can see how many views a post has.
 * [ ] User can comment on their post or or the user post.
 * [ ] User can add "tags" to a post, and filter posts by tag.
 
@@ -51,7 +51,7 @@ Here's a walkthrough of implemented user stories (I using silent cast instead of
 
 ## Notes
 
-Because I have implemented user system into a project, make it more complicated. Therefore, I can't implement comment or tag into that at before the deadline so I skip it in first review.  (I will implement that in Saturday (post-views, comments, tag))
+Because I have implemented user system into a project, make it more complicated. Therefore, I can't implement comment or tag into that at before the deadline so I skip it in first review.  (I will implement that in Saturday (comments, tag))
 
 ## License
 
