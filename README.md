@@ -4,7 +4,7 @@
 
 Submitted by: **HieuNM6**
 
-Time spent: **12** hours spent in total
+Time spent: **15** hours spent in total
 
 URL: **https://limitless-castle-10666.herokuapp.com/**
 
