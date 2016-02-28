@@ -7,7 +7,9 @@
 	</div>
 </div>
 
-<% @posts.each do |post| %>
+<div class="flickr_pagination">
+    <%= will_paginate @posts %>
+</div><% @posts.each do |post| %>
   <div class="list-group">
     <%= link_to post, class: "list-group-item list-group-item-info" do %> 
         <h3 class="list-group-item-heading"><%= post.title.humanize %></h3>
