@@ -4,9 +4,9 @@
 
 Submitted by: **HieuNM6**
 
-Time spent: **15** hours spent in total
+Time spent: **16** hours spent in total
 
-URL: **https://limitless-castle-10666.herokuapp.com/**
+URL: **https://pre-work-hieunm.herokuapp.com/**
 
 ## User Stories
 
@@ -33,6 +33,7 @@ The following **additional** features are implemented:
 - [x] User can login , session only destroy when user logout.
 - [x] Using Gravatar for user avatar.
 - [x] User have id = 1 will have aditional menu to manage user and have permission to detele post and comment of other user.
+- [x] Using will_paginate for paginate post.
 
 ## Video Walkthrough
 
