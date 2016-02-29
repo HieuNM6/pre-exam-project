@@ -8,7 +8,7 @@
     <center><h1> <strong>Not found</strong> </h1></center>
 <% end %>
 <div class="digg_pagination">
-        <%= will_paginate @posts, previous_label: "&#10096;", next_label: "&#10097;", inner_window: "1", outer_window: "0" %>
+    <%= will_paginate @posts, previous_label: "&#10096; &nbsp;", next_label: "&nbsp; &nbsp; &#10097;", inner_window: "1", outer_window: "0" %>
 </div>
 <% @posts.each do |post| %>
   <div class="list-group">
